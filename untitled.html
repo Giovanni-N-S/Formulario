@@ -16,24 +16,38 @@
         <label for="codigo_postal" class="texto">Código postal: </label>
         <input type="number" name="codigo_postal" id="codigo_postal" class="recuadro" placeholder="Ingresa tu código ponstal : XXXXX">
             <br>
-        <label for="Genero" class="texto">Género</label>
         <div>
+            <label for="Genero" class="texto">Género:</label>
             <label for="Masculino" class="texto">Masculino</label>
-            <input type="radio" name="Genero" id="Masculino" >
-
+            <input type="radio" name="Genero" id="Masculino">
             <label for="Femenino" class="texto">Femenino</label>
             <input type="radio" name="Genero" id=""Femenino>
         </div>
             <br>
-        <label class="texto">Carrera de interes</label>
+        <label for="Intereses" class="texto">Intereses (Selecciona todos los que apliquen)</label>
             <br>
         <div>
-            <label for="cc" class="texto">Ciencias de la computación</label>
-            <input type="radio" name="Carrera" id="cc" selected>
-            
-            <label for="ingenieria" class="texto">Ingenieria en computación</label>
-            <input type="radio" name="Carrera" id="ingenieria" required>
+            <label>Tecnologia</label>
+            <input type="checkbox" name="Intereses" value="Tecnologia" id="">
+            <label>Deportes</label>
+            <input type="checkbox" name="Intereses" value="Deportes" id="">
+            <label>Musica</label>
+            <input type="checkbox" name="Intereses" value="Musica" id="">
+            <label>Arte</label>
+            <input type="checkbox" name="Intereses" value="Arte" id="">
         </div>
+            <br>
+        <label for="Pais" class="texto">Selecciona tu país: </label>
+        <select name="Pais" id="Pais" class="recuadro">
+            <option value="Default">Elije tu país</option>
+            <option value="Mexico">México</option>
+            <option value="Canada">Canadá</option>
+            <option value="Estados_Unidos">Estados Unidos</option>
+            <option value="Japon">Japon</option>
+            <option value="China">China</option>
+        </select>
+            <br>
+        <label for="Comentarios"></label>
             <br>
         <button type="submit" class="submit-btn" >Enviar Formulario</button>
     </form>
